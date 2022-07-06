@@ -1,10 +1,13 @@
 <template>
-  <div>12331233</div>
+  <BarChart></BarChart>
 </template>
 
 <script>
-import vchart from "";
-export default {};
+import BarChart from "../../components/BarChart.vue";
+export default {
+  name: "PostHome",
+  components: { BarChart },
+};
 </script>
 
 <style>
