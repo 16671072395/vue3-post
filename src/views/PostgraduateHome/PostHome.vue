@@ -1,12 +1,12 @@
 <template>
-  <BarChart></BarChart>
+  <Layout></Layout>
 </template>
 
 <script>
-import BarChart from "../../components/BarChart.vue";
+import Layout from "../../components/Layout";
 export default {
   name: "PostHome",
-  components: { BarChart },
+  components: { Layout },
 };
 </script>
 

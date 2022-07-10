@@ -62,4 +62,7 @@ export default {
 .aside {
   width: 120px;
 }
+div {
+  font: size 0.625rem;
+}
 </style>
