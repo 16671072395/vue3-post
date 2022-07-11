@@ -70,4 +70,16 @@ const router = createRouter({
   routes
 })
 
+/**
+ * 检测登陆状态，isLogin有值可以进行正常跳转，没有值跳转到登陆注册页
+ */
+router.beforeEach((to,from,next)=>{
+  let token = localStorage.getItem("isLogin")
+  if(token || to.path === "/login"){
+    next()
+  }else {
+    next("/login")
+  }
+})
+
 export default router
