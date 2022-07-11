@@ -85,7 +85,7 @@ export default {
 #myDiv {
   height: 2rem;
   width: 5rem;
-  margin: 0rem 0.15rem 0rem 0rem;
+  margin: 0rem 0.2rem 0rem 0rem;
   border: 1px solid rgb(6, 6, 202);
   float: left;
 }

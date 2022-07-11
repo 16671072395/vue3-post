@@ -65,4 +65,7 @@ export default {
 div {
   font: size 0.625rem;
 }
+.allHeight {
+  padding: 0px 0px 0px 10px;
+}
 </style>

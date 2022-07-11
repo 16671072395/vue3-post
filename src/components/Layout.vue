@@ -16,9 +16,16 @@
       </ItemPage>
     </section>
     <!-- 中容器 -->
-    <section class="itemCenter">2</section>
+    <section class="itemCenter">
+      <ConterChar></ConterChar>
+    </section>
     <!-- 右容器 -->
-    <section class="itemRight">3</section>
+    <section class="itemRight">
+      <ItemPage>
+        <RightOne></RightOne>
+        <RightTwo></RightTwo>
+      </ItemPage>
+    </section>
   </section>
 </template>
 
@@ -30,6 +37,9 @@ import BarChartThree from "./PostHome/BarChartThree.vue";
 import BarChartFour from "./PostHome/BarChartFour.vue";
 import AsideOne from "./PostHome/AsideOne.vue";
 import AsideTwo from "./PostHome/AsideTwo.vue";
+import RightOne from "./PostHome/RightOne.vue";
+import RightTwo from "./PostHome/RightTwo.vue";
+import ConterChar from "./PostHome/ConterChar.vue";
 export default {
   components: {
     BarChartOne,
@@ -39,6 +49,9 @@ export default {
     BarChartFour,
     AsideOne,
     AsideTwo,
+    RightOne,
+    RightTwo,
+    ConterChar,
   },
   name: "Layout",
 };
@@ -60,15 +73,19 @@ header {
   /* 盒子上10px 左右0px 下0的外边距 */
 
   display: flex; /*父容器设置flex布局才能在子元素使用 */
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
-.itemLeft,
-.itemRight {
+.itemLeft {
   flex: 3;
   /* border: 1px solid blue; */
 }
+.itemRight {
+  flex: 3;
+  float: right;
+}
 .itemConter {
   flex: 5;
+
   /* border: 1px solid blue; */
 }
 </style>

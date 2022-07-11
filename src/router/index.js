@@ -59,9 +59,9 @@ const routes = [
     component: VerticalMenu
   },
   {
-    path:'/login',
-    name:'login',
-    component:Login
+    path: '/login',
+    name: 'login',
+    component: Login
   }
 ]
 
@@ -73,11 +73,12 @@ const router = createRouter({
 /**
  * 检测登陆状态，isLogin有值可以进行正常跳转，没有值跳转到登陆注册页
  */
-router.beforeEach((to,from,next)=>{
+router.beforeEach((to, from, next) => {
   let token = localStorage.getItem("isLogin")
-  if(token || to.path === "/login"){
+  if (token || to.path === "/login") {
+    // next("/posthome")
     next()
-  }else {
+  } else {
     next("/login")
   }
 })
