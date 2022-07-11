@@ -8,146 +8,147 @@ export default {
   name: "AsideTwo",
   mounted() {
     let myEcharts = echarts.init(this.$refs.mychart);
-    myEcharts.setOption({
+    var option = {
       title: {
-        text: "国际交流",
-        textStyle: {
-          color: "#2A6BBA",
-        },
-        left: "35%",
+        text: "C9高校CSC人数情况统计",
+        top: 0,
+        left: 35,
       },
-      //   backgroundColor: "#f7f7f7", //背景颜色
       tooltip: {
-        show: true,
-        // formatter: "{a} <br/>{b} : {c} ({d}%)",
-        formatter: "{b} : {c}",
+        trigger: "axis",
+        axisPointer: {
+          type: "cross",
+          crossStyle: {
+            color: "#999",
+          },
+        },
       },
-      //   图例,不需要
-      //   legend: {
-      //     x: "center",
-      //     data: ["班车", "包车"],
-      //   },
       toolbox: {
-        show: false,
         feature: {
-          mark: { show: true },
           dataView: { show: true, readOnly: false },
+          magicType: { show: true, type: ["line", "bar"] },
           restore: { show: true },
           saveAsImage: { show: true },
         },
+        show: false,
       },
-      calculable: false,
-      series: [
-        // 第一个饼图
+      legend: {
+        data: ["Precipitation", "Temperature"],
+        top: 20,
+      },
+      xAxis: [
         {
-          name: "出国学习",
-          type: "pie",
-          center: ["50%", "35%"],
-          radius: [0, 40],
-          data: [{ value: 56, name: "出国学习" }],
-          itemStyle: {
-            //系列级个性化
-            normal: {
-              color: "#AB7B94",
-              shadowColor: "#E07CCB",
-              shadowBlur: 10,
-              labelLine: {
-                //饼图不显示线条
-                length: 2,
-                show: false,
-              },
-              label: {
-                //饼图不显示文字
-                show: true,
-                position: "center", //饼图图上显示百分比
-                formatter: function (params) {
-                  return params.data.name + "\n" + params.data.value + "人";
-                },
-                textStyle: {
-                  fontSize: 14,
-                  color: "#fff",
-                },
-              },
-              labelLine: {
-                show: true,
-                length: 10,
-                length2: 0,
-                lineStyle: {
-                  color: "#0066FF",
-                  width: 1,
-                },
-              },
+          type: "category",
+          data: [
+            "清华",
+            "北大",
+            "复旦",
+            "上交",
+            "南京",
+            "浙大",
+            "中科大",
+            "哈工大",
+            "西交",
+          ],
+          //坐标轴指示器配置项
+          axisPointer: {
+            type: "shadow", //指示器类型:阴影
+          },
+          //坐标轴刻度相关设置
+          axisTick: {
+            show: true,
+            alignWithLabel: true, //保证刻度线和标签对齐
+            interval: 0, //坐标轴刻度的显示间隔,0为强制显示所有，在类目轴中有效。
+          },
+          // 坐标轴刻度标签(刻度下对应的文字)的相关设置
+          axisLabel: {
+            show: true,
+            interval: 0, //坐标轴刻度标签的显示间隔,0为强制显示所有，在类目轴中有效。
+            fontSize: 9, //标签字体
+          },
+          min: 0,
+        },
+      ],
+      yAxis: [
+        {
+          type: "value",
+          name: "数量",
+          min: 0,
+          max: 400,
+          interval: 50,
+          axisLabel: {
+            formatter: "{value}",
+            color: "black",
+          },
+          // 坐标轴名称的文字样式。
+          nameTextStyle: {
+            // 坐标轴名称的颜色，默认取 axisLine.lineStyle.color
+            color: "black",
+          },
+          color: "black",
+          // 坐标轴轴线相关设置。
+          axisLine: {
+            show: true,
+            lineStyle: {
+              color: "#e6ebf4",
             },
           },
         },
-        // 第二个饼图
         {
-          name: "来校外籍学生",
-          type: "pie",
-          center: ["30%", "70%"],
-          radius: [0, 45],
-          data: [{ value: 512, name: "来校外籍学生" }],
-          itemStyle: {
-            //系列级个性化
-            normal: {
-              color: "#2A6BBA",
-              shadowColor: "#5D9FFF",
-              shadowBlur: 10,
-              labelLine: {
-                //饼图不显示线条
-                length: 2,
-                show: false,
-              },
-              label: {
-                //饼图不显示文字
-                show: true,
-                position: "center", //饼图图上显示百分比
-                formatter: function (params) {
-                  return params.data.name + "\n" + params.data.value + "人";
-                },
-                textStyle: {
-                  fontSize: 14,
-                  color: "#fff",
-                },
-              },
+          type: "value",
+          name: "覆盖率",
+          min: 0,
+          max: 30,
+          interval: 5,
+          axisLabel: {
+            formatter: "{value}%",
+            color: "black",
+          },
+          //坐标轴在 grid 区域中的分隔线
+          splitLine: {
+            show: false,
+          },
+          // 坐标轴轴线相关设置。
+          axisLine: {
+            show: true,
+            lineStyle: {
+              color: "#e6ebf4",
             },
           },
-        },
-        // 第三个饼图
-        {
-          name: "出国参加会议",
-          type: "pie",
-          center: ["70%", "65%"],
-          radius: [0, 45],
-          data: [{ value: 268, name: "出国参加会议" }],
-          itemStyle: {
-            //系列级个性化
-            normal: {
-              color: "#475BD3",
-              shadowColor: "#5D9FFF",
-              shadowBlur: 20,
-              labelLine: {
-                //饼图不显示线条
-                length: 2,
-                show: false,
-              },
-              label: {
-                //饼图不显示文字
-                show: true,
-                position: "center", //饼图图上显示百分比
-                formatter: function (params) {
-                  return params.data.name + "\n" + params.data.value + "人";
-                },
-                textStyle: {
-                  fontSize: 14,
-                  color: "#fff",
-                },
-              },
-            },
+          // 坐标轴名称的文字样式。
+          nameTextStyle: {
+            // 坐标轴名称的颜色，默认取 axisLine.lineStyle.color
+            color: "black",
           },
         },
       ],
-    });
+      series: [
+        {
+          name: "Precipitation",
+          type: "bar",
+          tooltip: {
+            valueFormatter: function (value) {
+              return value + " ml";
+            },
+          },
+          data: [364, 329, 247, 264, 287, 315, 275, 212, 248],
+        },
+        {
+          name: "Temperature",
+          type: "line",
+          yAxisIndex: 1,
+          tooltip: {
+            valueFormatter: function (value) {
+              return value + " °C";
+            },
+          },
+          data: [22.0, 16.2, 14.3, 16.5, 17.3, 19.2, 20.3, 15.4, 13.0],
+        },
+      ],
+      grid: { top: 70, bottom: 20 },
+    };
+
+    option && myEcharts.setOption(option);
   },
 };
 </script>
