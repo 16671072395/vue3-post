@@ -9,6 +9,8 @@ import ThematicAnalysis from "../views/ThematicAnalysis"
 import ForecastAlert from "../views/ForecastAlert"
 import VerticalMenu from "../components/VerticalMenu"
 import PostHome from "../views/PostgraduateHome/PostHome.vue"
+
+import Login from "@/views/Login";
 const routes = [
   {
     path: '/homepage',
@@ -56,6 +58,11 @@ const routes = [
     name: 'verticalmenu',
     component: VerticalMenu
   },
+  {
+    path:'/login',
+    name:'login',
+    component:Login
+  }
 ]
 
 const router = createRouter({
