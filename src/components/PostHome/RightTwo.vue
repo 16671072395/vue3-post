@@ -9,43 +9,75 @@ export default {
   mounted() {
     let myEcharts = echarts.init(this.$refs.mychart);
     myEcharts.setOption({
-      backgroundColor: "#2c343c",
+      //不需要背景颜色
+      // backgroundColor: "#2c343c",
       title: {
-        text: "Customized Pie",
+        text: "就业情况",
+        top: 0,
         left: "center",
-        top: 20,
         textStyle: {
-          color: "#ccc",
+          color: "#fff",
         },
       },
       tooltip: {
         trigger: "item",
       },
-      visualMap: {
-        show: false,
-        min: 80,
-        max: 600,
-        inRange: {
-          colorLightness: [0, 1],
+      angleAxis: {
+        type: "category",
+        data: [
+          { value: 750, name: "已就业" },
+          { value: 354, name: "未就业" },
+          { value: 274, name: "升学" },
+          { value: 245, name: "考公考编" },
+        ],
+        axisLabel: {
+          show: false,
+        },
+        //坐标轴轴线相关设置。
+        // axisLine: {
+        //   show: false,
+        // },
+        // axisTick: {
+        //   show: false,
+        // },
+      },
+      radiusAxis: {
+        max: 6,
+        z: 10,
+        splitLine: {
+          lineStyle: {
+            color: "rgba(166, 166, 180, 0.878)",
+            type: "dashed",
+          },
+        },
+        axisLabel: {
+          show: false,
+        },
+        //坐标轴轴线相关设置。
+        axisLine: {
+          show: false,
+        },
+        axisTick: {
+          show: false,
         },
       },
+      polar: { center: ["50%", "50%"] },
       series: [
         {
-          name: "Access From",
+          z: 10,
           type: "pie",
-          radius: "55%",
+          // roseType: "area",
+          radius: "70%",
           center: ["50%", "50%"],
           data: [
-            { value: 335, name: "Direct" },
-            { value: 310, name: "Email" },
-            { value: 274, name: "Union Ads" },
-            { value: 235, name: "Video Ads" },
-            { value: 400, name: "Search Engine" },
-          ].sort(function (a, b) {
-            return a.value - b.value;
-          }),
-          roseType: "radius",
+            { value: 750, name: "已就业" },
+            { value: 354, name: "未就业" },
+            { value: 274, name: "升学" },
+            { value: 245, name: "考公考编" },
+          ],
+          coordinateSystem: "polar",
           label: {
+            show: true,
             color: "rgba(255, 255, 255, 0.3)",
           },
           labelLine: {
@@ -53,21 +85,22 @@ export default {
               color: "rgba(255, 255, 255, 0.3)",
             },
             smooth: 0.2,
-            length: 10,
-            length2: 20,
-          },
-          itemStyle: {
-            color: "#c23531",
-            shadowBlur: 200,
-            shadowColor: "rgba(0, 0, 0, 0.5)",
-          },
-          animationType: "scale",
-          animationEasing: "elasticOut",
-          animationDelay: function (idx) {
-            return Math.random() * 200;
+            length: 12,
+            length2: 0,
           },
         },
+        {
+          type: "bar",
+          data: [1],
+          coordinateSystem: "polar",
+        },
       ],
+      legend: {
+        show: true,
+        data: ["已就业", "未就业", "升学", "考公考编"],
+        bottom: "bottom",
+        orient: "horizontal",
+      },
     });
   },
 };
@@ -76,12 +109,12 @@ export default {
 <style scoped>
 .myDiv {
   /* 控制div的缺角样式 */
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 88%, 89% 100%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 88%, 89% 100%, 0 100%);
+  -webkit-clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%, 0 11%);
+  clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%, 0 11%);
   /* div的其他属性 */
   /* background-color: aqua; */
   height: 4rem;
-  width: 4.5rem;
+  width: 4.8rem;
   border: 1px solid rgb(6, 6, 202);
   margin: 10px 0px 10px 0px;
 }
