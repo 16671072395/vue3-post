@@ -17,7 +17,7 @@ export default {
   /* border: 1px solid rgb(6, 6, 202); */
   position: absolute;
   /* 外边距20px */
-  /* margin: 0.25rem; */
+  margin: 0px 0px 0px 0px;
   /* background-color: rgba(13, 130, 255, 0.851); */
 }
 </style>

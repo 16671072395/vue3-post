@@ -156,13 +156,13 @@ export default {
 <style scoped>
 .myDiv {
   /* 控制div的缺角样式 */
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 88%, 89% 100%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 88%, 89% 100%, 0 100%);
+  -webkit-clip-path: polygon(90% 0, 100% 10%, 100% 100%, 0 100%, 0 0);
+  clip-path: polygon(90% 0, 100% 10%, 100% 100%, 0 100%, 0 0);
   /* div的其他属性 */
   /* background-color: aqua; */
   height: 4rem;
-  width: 4.5rem;
+  width: 4.8rem;
   border: 1px solid rgb(6, 6, 202);
-  padding: 10px 0px 0px 0px;
+  margin: 10px 0px 0px 0px;
 }
 </style>

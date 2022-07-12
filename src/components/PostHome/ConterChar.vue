@@ -67,6 +67,17 @@ export default {
             return Math.random() * 200;
           },
         },
+        {
+          name: "BackGround",
+          radius: "70%",
+          center: ["50%", "50%"],
+          data: [10, 12],
+          itemStyle: {
+            color: "red",
+            shadowBlur: 200,
+            shadowColor: "rgba(0, 0, 0, 0.5)",
+          },
+        },
       ],
     });
   },
@@ -81,6 +92,6 @@ export default {
   height: 8.2rem;
   width: 11.5rem;
   /* border: 1px solid rgb(6, 6, 202); */
-  margin: 10px 10px 0px 10px;
+  margin: 10px 10px 10px 0px;
 }
 </style>

@@ -11,8 +11,8 @@
     <!-- 左容器 -->
     <section class="itemLeft">
       <ItemPage>
-        <AsideOne></AsideOne>
-        <AsideTwo></AsideTwo>
+        <AsideOne id="1"></AsideOne>
+        <AsideTwo id="2"></AsideTwo>
       </ItemPage>
     </section>
     <!-- 中容器 -->
@@ -22,8 +22,8 @@
     <!-- 右容器 -->
     <section class="itemRight">
       <ItemPage>
-        <RightOne></RightOne>
-        <RightTwo></RightTwo>
+        <RightOne id="3"></RightOne>
+        <RightTwo id="4"></RightTwo>
       </ItemPage>
     </section>
   </section>
@@ -61,7 +61,7 @@ export default {
 header {
   height: 2rem;
   /* width: 21rem; */
-  background-color: rgba(0, 0, 255, 0.2);
+  /* background-color: rgba(0, 0, 255, 0.2); */
   /* display: inline-block; */
 }
 
