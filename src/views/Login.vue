@@ -70,7 +70,17 @@
             login() {
                 // 这是为了控制表头显示与否
                 localStorage.setItem("isLogin","true")
-                const self = this;
+                this.$message({
+                    type:'success',
+                    showClose:true,
+                    message:'登录成功'
+                })
+                let self = this
+                setTimeout(function (){
+                    window.location.reload()
+                },100)
+                self.$router.push('/posthome')
+                // const self = this;
                 // if (self.form.useremail != "" && self.form.userpwd != "") {
                 //     self.$axios({
                 //         method:'post',
@@ -126,6 +136,10 @@
                 // } else {
                 //     this.$message.error("填写不能为空！");
                 // }
+            },
+            go(){
+                this.$router.push("/posthome")
+                window.location.reload()
             }
         }
     }
