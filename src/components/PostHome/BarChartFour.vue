@@ -84,9 +84,10 @@ export default {
 <style scoped>
 #myDiv {
   height: 2rem;
-  width: 5rem;
-  margin: 0rem 0rem 0rem 0.2rem;
+  width: 5.1rem;
+  margin: 0rem 0rem 0rem 0.15rem;
   border: 1px solid rgb(6, 6, 202);
-  float: left;
+  float: right;
+  display: inherit;
 }
 </style>
