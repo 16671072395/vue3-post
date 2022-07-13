@@ -11,7 +11,6 @@ import * as Icons from "@element-plus/icons"
 //引入echarts
 // import * as echarts from "echarts"
 import "lib-flexible/flexible.js"
-
 const app = createApp(App)
 for (const name in EleIcons) {
     app.component(name, EleIcons[name])

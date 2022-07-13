@@ -92,7 +92,7 @@
                 //     }).then( res => {
                 //             switch(res.data){
                 //                 case 0:
-                //                     this.$message.success("登陆成功！");
+                //                     this.$message.success("登录成功！");
                 //                     break;
                 //                 case -1:
                 //                     this.emailError = true;
