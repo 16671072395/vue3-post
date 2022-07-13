@@ -148,6 +148,9 @@ export default {
         },
       ],
     });
+    window.addEventListener("resize", () => {
+      myEcharts.resize();
+    });
   },
 };
 </script>

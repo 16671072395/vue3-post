@@ -149,6 +149,9 @@ export default {
     };
 
     option && myEcharts.setOption(option);
+    window.addEventListener("resize", () => {
+      myEcharts.resize();
+    });
   },
 };
 </script>

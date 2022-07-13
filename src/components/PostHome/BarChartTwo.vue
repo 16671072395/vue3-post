@@ -77,6 +77,9 @@ export default {
         width: "90%",
       },
     });
+    window.addEventListener("resize", () => {
+      myEcharts.resize();
+    });
   },
 };
 </script>

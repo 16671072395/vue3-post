@@ -1,5 +1,5 @@
 <template>
-  <div class="myDiv" ref="mychart">dsa4d2154</div>
+  <div class="myDiv" ref="mychart"></div>
 </template>
 
 <script>
@@ -101,6 +101,9 @@ export default {
         bottom: "bottom",
         orient: "horizontal",
       },
+    });
+    window.addEventListener("resize", () => {
+      myEcharts.resize();
     });
   },
 };
