@@ -74,7 +74,7 @@ export default {
         x: 12,
         y: 35,
         height: "70%",
-        width: "90%",
+        width: "100%",
       },
     });
     window.addEventListener("resize", () => {
@@ -87,10 +87,10 @@ export default {
 <style scoped>
 #myDiv {
   height: 2rem;
-  width: 5.1rem;
-  margin: 0rem 0rem 0rem 0.15rem;
+  width: 5.25rem;
+  margin: 0rem 0rem 0rem 0.1rem;
   border: 1px solid rgb(6, 6, 202);
   float: right;
-  display: inherit;
+  /* display: inherit; */
 }
 </style>

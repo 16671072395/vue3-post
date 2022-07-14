@@ -81,6 +81,7 @@ export default {
           },
           // 柱状图宽度
           barWidth: "50%",
+          color: "rgb(74,163,241)",
         },
       ],
     });

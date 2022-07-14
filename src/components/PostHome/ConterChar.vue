@@ -139,17 +139,35 @@ export default {
       return lineData;
     }
     drawline(pointData, lineData);
-    console.log(lineData);
     myEcharts.setOption({
+      title: {
+        text: "各省生源情况",
+        top: 0,
+        left: "center",
+        textStyle: {
+          color: "#fff",
+        },
+      },
       geo: {
         //地理坐标组件
         type: "map",
         map: "ChinaMap",
-        roam: true, //开启缩放和拖动
+        roam: false, //开启缩放和拖动
         zoom: 1.5, //地图层级
-        center: [109.256471, 36.011222], //地图中心点
+        center: [106.256471, 36.011222], //地图中心点
         itemStyle: {
           areaColor: "rgb(192, 195, 220)",
+        },
+        select: {
+          disabled: true,
+          label: {
+            show: true,
+            formatter: "{b}::{c}",
+          },
+        },
+        label: {
+          show: false,
+          // formatter: "\n",
         },
       },
       series: [
@@ -159,17 +177,15 @@ export default {
           data: pointData,
           label: {
             show: true,
-            formatter: "\n\n{b}",
+            formatter: "\n\n\n{b}:{@value}",
           },
+
           // 这个时候地图上就会有点的涟漪效果
           rippleEffect: {
             //涟漪特效相关配置。
             number: 1, //波纹的数量。
             scale: 2, //动画中波纹的最大缩放比例
           },
-          // label:{
-          // show:true
-          // },
           itemStyle: {
             color: "rgb(214, 118, 118)",
           },
@@ -188,15 +204,6 @@ export default {
           },
           show: true,
           data: lineData,
-          // data: [
-          //   {
-          //     point: ["北京", "广西"],
-          //     coords: [
-          //       [116.46, 39.92],
-          //       [108.283139, 22.957987],
-          //     ],
-          //   },
-          // ],
         },
       ],
     });

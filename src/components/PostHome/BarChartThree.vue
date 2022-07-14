@@ -87,8 +87,8 @@ export default {
 <style scoped>
 #myDiv {
   height: 2rem;
-  width: 5.15rem;
-  margin: 0rem 0.15rem 0rem 0.15rem;
+  width: 5.25rem;
+  margin: 0rem 0.1rem 0rem 0.1rem;
   border: 1px solid rgb(6, 6, 202);
   float: left;
 }

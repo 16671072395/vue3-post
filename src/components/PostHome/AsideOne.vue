@@ -12,9 +12,9 @@ export default {
       title: {
         text: "国际交流",
         textStyle: {
-          color: "#2A6BBA",
+          color: "#fff",
         },
-        left: "35%",
+        left: "center",
       },
       //   backgroundColor: "#f7f7f7", //背景颜色
       tooltip: {

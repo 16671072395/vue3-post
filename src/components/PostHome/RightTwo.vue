@@ -78,11 +78,11 @@ export default {
           coordinateSystem: "polar",
           label: {
             show: true,
-            color: "rgba(255, 255, 255, 0.3)",
+            color: "rgba(255, 255, 255, 1)",
           },
           labelLine: {
             lineStyle: {
-              color: "rgba(255, 255, 255, 0.3)",
+              color: "rgba(255, 255, 255,1)",
             },
             smooth: 0.2,
             length: 12,

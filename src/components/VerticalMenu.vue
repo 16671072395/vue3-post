@@ -5,7 +5,7 @@
         active-text-color="#ffd04b"
         background-color="#545c64"
         class="el-menu-vertical-demo"
-        default-active="2"
+        :default-active="activeIndex2"
         text-color="#fff"
         @open="handleOpen"
         @close="handleClose"
@@ -53,4 +53,9 @@ export default {
 </script>
 
 <style scoped>
+.el-menu-vertical-demo {
+  height: 760px;
+  width: 120px;
+  background-color: #008bc2;
+}
 </style>

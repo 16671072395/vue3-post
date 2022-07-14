@@ -12,7 +12,10 @@ export default {
       title: {
         text: "C9高校CSC人数情况统计",
         top: 0,
-        left: 35,
+        left: "center",
+        textStyle: {
+          color: "#fff",
+        },
       },
       tooltip: {
         trigger: "axis",
@@ -65,6 +68,7 @@ export default {
             show: true,
             interval: 0, //坐标轴刻度标签的显示间隔,0为强制显示所有，在类目轴中有效。
             fontSize: 9, //标签字体
+            color: "black",
           },
           min: 0,
         },
@@ -132,6 +136,9 @@ export default {
             },
           },
           data: [364, 329, 247, 264, 287, 315, 275, 212, 248],
+          itemStyle: {
+            color: "rgb(74,163,241)",
+          },
         },
         {
           name: "Temperature",
@@ -143,6 +150,9 @@ export default {
             },
           },
           data: [22.0, 16.2, 14.3, 16.5, 17.3, 19.2, 20.3, 15.4, 13.0],
+          itemStyle: {
+            color: "rgb(13, 195, 52)",
+          },
         },
       ],
       grid: { top: 70, bottom: 20 },
