@@ -191,7 +191,7 @@
                 search: '',
                 form: {},
                 dialogVisible: false,
-                total: 5,
+                total: 6,
                 tableData: [
                     {
                         'id': 1,
