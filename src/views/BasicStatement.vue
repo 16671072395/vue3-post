@@ -9,7 +9,6 @@
         <div style="margin: 10px 0">
             <el-input v-model="search" placeholder="键入关键字" style="width: 20%" clearable></el-input>
             <el-button type="primary" style="margin-left: 5px" @click="load">查询</el-button>
-
         </div>
         <!--        表格-->
         <el-table
@@ -20,8 +19,7 @@
                 style="width: 100%;"
                 fit>
             <el-table-column prop="id" label="编号" sortable width="70%"/>
-            <el-table-column prop="userName" label="用户名"/>
-            <el-table-column prop="name" label="姓名" width="90%"/>
+            <el-table-column prop="number" label="学号"/>
             <el-table-column prop="email" label="邮箱"/>
             <el-table-column prop="score_hs" label="高考成绩" sortable width="90%"/>
             <el-table-column prop="score_course" label="学期成绩" sortable width="90%"/>
@@ -56,11 +54,8 @@
             <!--            弹窗-->
             <el-dialog v-model="dialogVisible" title="新增人员" width="30%" draggable>
                 <el-form :model="form" label-width="120px">
-                    <el-form-item label="用户名">
-                        <el-input v-model="form.userName" style="width: 80%"></el-input>
-                    </el-form-item>
-                    <el-form-item label="姓名">
-                        <el-input v-model="form.name" style="width: 80%"></el-input>
+                    <el-form-item label="学号">
+                        <el-input v-model="form.number" style="width: 80%"></el-input>
                     </el-form-item>
                     <el-form-item label="邮箱">
                         <el-input v-model="form.email" style="width: 80%"></el-input>
@@ -195,7 +190,7 @@
                 tableData: [
                     {
                         'id': 1,
-                        'userName': '开局重伤倒地，激发队友潜力',
+                        'number': '开局重伤倒地，激发队友潜力',
                         'name':'捍卫者',
                         'email': 'admin@gxu.edu.cn',
                         'score_hs': 591,
@@ -204,7 +199,7 @@
                     },
                     {
                         'id': 2,
-                        'userName': '理塘最強伝説と絕兇の猛虎！純真丁一郎です！',
+                        'number': '理塘最強伝説と絕兇の猛虎！純真丁一郎です！',
                         'name':'张三',
                         'email': 'zhang_san@gxu.edu.cn',
                         'score_hs': 525,
@@ -213,7 +208,7 @@
                     },
                     {
                         'id': 3,
-                        'userName': '下北沢最強伝説！野獣化の先輩浩二です!',
+                        'number': '下北沢最強伝説！野獣化の先輩浩二です!',
                         'name':'李四',
                         'email': 'li_si@gxu.edu.cn',
                         'score_hs': 555,
@@ -222,7 +217,7 @@
                     },
                     {
                         'id': 4,
-                        'userName': '吉林最速伝説と卑鄙の猎豹！跑男趙三金です!',
+                        'number': '吉林最速伝説と卑鄙の猎豹！跑男趙三金です!',
                         'name':'王五',
                         'email': 'wang_wu@gxu.edu.cn',
                         'score_hs': 592,
@@ -231,7 +226,7 @@
                     },
                     {
                         'id': 5,
-                        'userName': '瀋陽最狠伝説と整活の猛虎！貴物虎太郎です!',
+                        'number': '瀋陽最狠伝説と整活の猛虎！貴物虎太郎です!',
                         'name':'赵六',
                         'email': 'zhao_liu@gxu.edu.cn',
                         'score_hs': 610,
@@ -240,7 +235,7 @@
                     },
                     {
                         'id': 6,
-                        'userName': '瀋陽最速伝説と疾走の帝王！廃物刀一郎です!',
+                        'number': '瀋陽最速伝説と疾走の帝王！廃物刀一郎です!',
                         'name':'飞舞刀',
                         'email': 'dog@700+.com',
                         'score_hs': 150,
