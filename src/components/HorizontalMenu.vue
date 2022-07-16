@@ -13,6 +13,7 @@
       >
         <!-- 开启路由模式，根据index进行转跳 -->
         <el-menu-item index="/homepage">首页</el-menu-item>
+        <el-menu-item index="/qualitymonitor">质量监测</el-menu-item>
         <el-menu-item index="/postgraduateportrait">研究生画像</el-menu-item>
         <el-menu-item index="/mentorportrait">导师画像</el-menu-item>
         <el-menu-item index="/thematicanalysis">主题分析</el-menu-item>
@@ -96,7 +97,7 @@ export default {
 <style scoped>
 .avatar {
   position: relative;
-  left: 13.825rem;
+  left: 12.825rem;
   top: 8px;
 }
 .el-menu-demo {
@@ -104,7 +105,7 @@ export default {
 }
 .msg {
   position: relative;
-  left: 14rem;
+  left: 13rem;
   top: 18px;
   color: #fff;
 }

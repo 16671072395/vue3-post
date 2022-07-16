@@ -9,8 +9,11 @@ import ThematicAnalysis from "../views/ThematicAnalysis"
 import ForecastAlert from "../views/ForecastAlert"
 import VerticalMenu from "../components/VerticalMenu"
 import PostHome from "../views/PostgraduateHome/PostHome.vue"
+import QualityMonitor from "../views/QualityMonitor.vue"
 
 import Login from "@/views/Login";
+
+
 const routes = [
   {
     path: '/homepage',
@@ -24,6 +27,11 @@ const routes = [
     }]
   },
   {
+    path: '/qualitymonitor',
+    name: 'qualitymonitor',
+    component: QualityMonitor
+  },
+  {
     path: '/postgraduate',
     name: 'postgraduate',
     component: Postgraduate
@@ -31,7 +39,19 @@ const routes = [
   {
     path: '/postgraduateportrait',
     name: 'postgraduateportrait',
-    component: PostgraduatePortrait
+    component: PostgraduatePortrait,
+    redirect: "/postname",
+    children: [{
+      path: '/postname',
+      name: 'postname',
+      component: () => import(/* webpackChunkName: "PostName" */ '../views/PostgraduatePortrait/PostName.vue'),
+
+    },
+    {
+      path: '/postportrait',
+      name: 'postportrait',
+      component: () => import(/* webpackChunkName: "PostPortrait" */ '../views/PostgraduatePortrait/PostPortrait.vue'),
+    }]
   },
   {
     path: '/mentorportrait',

@@ -30,16 +30,16 @@
 </template>
 
 <script>
-import ItemPage from "../components/ItemPage";
-import BarChartOne from "./PostHome/BarChartOne.vue";
-import BarChartTwo from "./PostHome/BarChartTwo.vue";
-import BarChartThree from "./PostHome/BarChartThree.vue";
-import BarChartFour from "./PostHome/BarChartFour.vue";
-import AsideOne from "./PostHome/AsideOne.vue";
-import AsideTwo from "./PostHome/AsideTwo.vue";
-import RightOne from "./PostHome/RightOne.vue";
-import RightTwo from "./PostHome/RightTwo.vue";
-import ConterChar from "./PostHome/ConterChar.vue";
+import ItemPage from "./ItemPage.vue";
+import BarChartOne from "./BarChartOne.vue";
+import BarChartTwo from "./BarChartTwo.vue";
+import BarChartThree from "./BarChartThree.vue";
+import BarChartFour from "./BarChartFour.vue";
+import AsideOne from "./AsideOne.vue";
+import AsideTwo from "./AsideTwo.vue";
+import RightOne from "./RightOne.vue";
+import RightTwo from "./RightTwo.vue";
+import ConterChar from "./ConterChar.vue";
 export default {
   components: {
     BarChartOne,
