@@ -1,15 +1,14 @@
 <template>
   <div
     style="
-      margin: 10px 0px 10px 0px;
+      margin: 10px 0px 0px 0px;
       padding: 10px;
       background-color: aliceblue;
     "
   >
     <!--      功能区域-->
     <div style="margin: 10px 0">
-      <el-button type="primary" @click="add">新增</el-button>
-      <el-button type="primary" @click="exportRecords">导出</el-button>
+      <!-- <el-button type="primary" @click="add">新增</el-button> -->
     </div>
     <!--      搜索区域-->
     <div style="margin: 10px 0">
@@ -22,6 +21,7 @@
       <el-button type="primary" style="margin-left: 5px" @click="load"
         >查询</el-button
       >
+      <el-button type="primary" @click="exportRecords">导出</el-button>
     </div>
     <!--        表格-->
     <el-table
@@ -33,13 +33,14 @@
       style="width: 100%"
       fit
     >
-      <el-table-column prop="id" label="编号" sortable width="70%" />
-      <el-table-column prop="userName" label="学号" />
-      <el-table-column prop="name" label="姓名" width="90%" />
-      <el-table-column prop="email" label="课程名" />
-      <el-table-column prop="score_hs" label="成绩" sortable width="90%" />
-      <el-table-column prop="address" label="学期" />
-      <el-table-column fixed="right" label="操作" width="150%">
+      <el-table-column prop="id" label="编号" sortable width="50%" />
+      <el-table-column prop="uid" label="学号" />
+      <!-- <el-table-column prop="name" label="姓名" width="90%" /> -->
+      <el-table-column prop="course_name" label="课程名" width="150%" />
+      <el-table-column prop="course_score" label="成绩" sortable width="70%" />
+      <el-table-column prop="grade_point" label="绩点" sortable width="70%" />
+      <el-table-column prop="term" label="学期" width="100%" />
+      <el-table-column fixed="right" label="操作" width="130%">
         <template #default="scope">
           <el-button type="primary" @click="handleEdit(scope.row)">
             编辑
@@ -217,58 +218,76 @@ export default {
       tableData: [
         {
           id: 1,
-          userName: "2022123",
-          name: "捍卫者",
-          email: "admin@gxu.edu.cn",
-          score_hs: 591,
-          score_course: 95,
-          address: "No. 189, Grove St, Los Angeles",
+          uid: "2022123",
+          // name: "捍卫者",
+          course_name: "人工智能导论",
+          course_score: 80,
+          grade_point: 3.0,
+          term: "2022下学期",
         },
         {
           id: 2,
-          userName: "2022124",
-          name: "张三",
-          email: "zhang_san@gxu.edu.cn",
-          score_hs: 525,
-          score_course: 99,
-          address: "No. 189, Grove St, Los Angeles",
+          uid: "2022123",
+          // name: "张三",
+          course_name: "中特理论与实践",
+          course_score: 91,
+          grade_point: 4.1,
+          term: "2022下学期",
         },
         {
           id: 3,
-          userName: "2022125!",
-          name: "李四",
-          email: "li_si@gxu.edu.cn",
-          score_hs: 555,
-          score_course: 88,
-          address: "No. 189, Grove St, Los Angeles",
+          uid: "2022123",
+          // name: "李四",
+          course_name: "深度学习基础",
+          course_score: 82,
+          grade_point: 3.2,
+          term: "2022下学期",
         },
-        // {
-        //   id: 4,
-        //   userName: "吉林最速伝説と卑鄙の猎豹！跑男趙三金です!",
-        //   name: "王五",
-        //   email: "wang_wu@gxu.edu.cn",
-        //   score_hs: 592,
-        //   score_course: 99,
-        //   address: "No. 189, Grove St, Los Angeles",
-        // },
-        // {
-        //   id: 5,
-        //   userName: "瀋陽最狠伝説と整活の猛虎！貴物虎太郎です!",
-        //   name: "赵六",
-        //   email: "zhao_liu@gxu.edu.cn",
-        //   score_hs: 610,
-        //   score_course: 59,
-        //   address: "No. 189, Grove St, Los Angeles",
-        // },
-        // {
-        //   id: 6,
-        //   userName: "瀋陽最速伝説と疾走の帝王！廃物刀一郎です!",
-        //   name: "飞舞刀",
-        //   email: "dog@700+.com",
-        //   score_hs: 150,
-        //   score_course: 59,
-        //   address: "No. 189, Grove St, Los Angeles",
-        // },
+        {
+          id: 4,
+          uid: "2022123",
+          // name: "李四",
+          course_name: "数学分析",
+          course_score: 83,
+          grade_point: 3.3,
+          term: "2022下学期",
+        },
+        {
+          id: 5,
+          uid: "2022123",
+          // name: "李四",
+          course_name: "算法设计与分析",
+          course_score: 84,
+          grade_point: 3.4,
+          term: "2022下学期",
+        },
+        {
+          id: 6,
+          uid: "2022123",
+          // name: "李四",
+          course_name: "应用密码学与网络安全",
+          course_score: 86,
+          grade_point: 3.6,
+          term: "2022下学期",
+        },
+        {
+          id: 7,
+          uid: "2022123",
+          // name: "李四",
+          course_name: "云计算技术",
+          course_score: 86,
+          grade_point: 3.6,
+          term: "2022下学期",
+        },
+        {
+          id: 8,
+          uid: "2022123",
+          // name: "李四",
+          course_name: "大数据技术",
+          course_score: 85,
+          grade_point: 3.5,
+          term: "2022下学期",
+        },
       ],
     };
   },

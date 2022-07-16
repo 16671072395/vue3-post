@@ -28,7 +28,7 @@ export default {
       },
       xAxis: {
         type: "category",
-        data: ["2017", "2018", "2019", "2020", "2021", "2022"],
+        data: ["论文总数", "核心论文数", "IE论文数", "SCI论文数"],
         //坐标轴指示器配置项
         axisPointer: {
           type: "shadow", //指示器类型:阴影
@@ -70,18 +70,19 @@ export default {
             color: " rgba(166, 166, 180, 0.878)",
           },
         },
+        max: 10,
       },
       series: [
         {
-          data: [20, 28, 35, 40, 70, 80],
+          data: [8, 3, 3, 2],
           type: "bar",
           showBackground: false,
           backgroundStyle: {
             color: "rgba(180, 180, 180, 0.2)",
           },
           // 柱状图宽度
-          barWidth: "50%",
-          color: "rgb(74,163,241)",
+          barWidth: "40%",
+          color: "#39c8e4",
         },
       ],
     });
@@ -95,8 +96,8 @@ export default {
 <style scoped>
 .myDiv {
   /* 控制div的缺角样式 */
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%, 0 90%);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%, 0 90%);
+  /* -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%, 0 90%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%, 0 90%); */
   /* div的其他属性 */
   /* background-color: aqua; */
   height: 6rem;

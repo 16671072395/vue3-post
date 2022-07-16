@@ -1,18 +1,17 @@
 <template>
   <el-row>
-    <el-col :span="12"
+    <el-col :span="9"
       ><div class="grid-content ep-bg-purple">
-        <el-avatar shape="square" fit :size="140"
-          ><img src="../../assets/headimage.jpg" />
-        </el-avatar>
+        <img src="../../assets/headimage.jpg" />
       </div>
     </el-col>
-    <el-col :span="10"
+    <el-col :span="8"
       ><div class="grid-content ep-bg-purple" />
       <el-row :gutter="2" align>
         <el-col> <span>姓名：张三</span> </el-col>
         <el-col><span>学校：广西大学</span></el-col>
-        <el-col><span>学院：计电学院</span></el-col>
+        <el-col><span>导师：XX教授</span></el-col>
+        <el-col><span>学制：3年</span></el-col>
       </el-row>
       <el-row :gutter="2">
         <el-col>
@@ -21,7 +20,11 @@
         </el-col>
         <el-col>
           <div class="grid-content ep-bg-purple" />
-          <span>政治面貌：群众 </span>
+          <span>学院：计电学院</span>
+        </el-col>
+        <el-col>
+          <div class="grid-content ep-bg-purple" />
+          <span> 研究方向：人工智能</span>
         </el-col>
         <el-col>
           <div class="grid-content ep-bg-purple" />
@@ -35,11 +38,34 @@
         </el-col>
         <el-col>
           <div class="grid-content ep-bg-purple" />
-          <span>地址：东21栋324室</span>
+          <!-- <span>地址：东21栋324室</span> -->
+          <span>专业：电子信息</span>
+        </el-col>
+        <el-col>
+          <div class="grid-content ep-bg-purple" />
+          <span>硕士类型：学术型</span>
         </el-col>
         <el-col>
           <div class="grid-content ep-bg-purple" />
           <span>邮箱：136****2354@163.com</span>
+        </el-col>
+      </el-row>
+      <el-row :gutter="2">
+        <el-col>
+          <div class="grid-content ep-bg-purple" />
+          <span>政治面貌：群众</span>
+        </el-col>
+        <el-col>
+          <div class="grid-content ep-bg-purple" />
+          <span>班级：XXXX班</span>
+        </el-col>
+        <el-col>
+          <div class="grid-content ep-bg-purple" />
+          <span>地址：东21栋324室</span>
+        </el-col>
+        <el-col>
+          <div class="grid-content ep-bg-purple" />
+          <span> QQ：2315248541</span>
         </el-col>
       </el-row>
     </el-col>
@@ -70,5 +96,10 @@ export default {
 }
 span {
   font-size: 18px;
+}
+img {
+  height: 200px;
+  width: 180px;
+  margin: 20px 0px 0px 40px;
 }
 </style>
