@@ -36,16 +36,18 @@
             <el-button type="primary" size="default">搜索</el-button>
         </div>
     </el-card>
-    <div>
-        <div class="teacher">
-            <div class="teacher_1" v-for="(item,id) in teacher" :key="id">
-                <img src="{{item.src}}" class="img">
-                <div class="teacher_2">
-                    <text>{{ item.name }}</text>
-                    <text>{{ item.company }}</text>
+    <div style="background-color: rgba(128,128,128,0.58)">
+        <ul class="list BanXing">
+            <li style="border-radius: 4px">
+                <div>
+                    <img src="../assets/test.jpeg" width="80%"
+                         style="display: block;margin: 10px auto;border-radius: 4px">
                 </div>
-            </div>
-        </div>
+                <div class="name">教师姓名</div>
+                <div class="company">教师单位</div>
+                <div class="btn">查看更多</div>
+            </li>
+        </ul>
     </div>
 
 
@@ -77,83 +79,86 @@
                 ],
                 CompanyName: '',
                 MentorCategory: '',
-                teacher: [
-                    {
-                        id: 1,
-                        src: "../../assets/test.jpeg",
-                        name: "测试",
-                        company: "xxx学院"
-                    },
-                    {
-                        id: 2,
-                        src: "../../assets/test.jpeg",
-                        name: "测试",
-                        company: "xxx学院"
-                    },
-                    {
-                        id: 3,
-                        src: "../../assets/test.jpeg",
-                        name: "测试",
-                        company: "xxx学院"
-                    }
-                ],
             }
         }
     }
 </script>
 
-<style>
-    .teacher {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        align-self: center;
-        align-items: center;
-        background-color: snow;
-    }
+<style lang="less" scoped>
+  .BanXing {
+    width: 1200px;
+    margin: auto;
+  }
 
-    .teacher_1 {
-        padding-left: 50px;
-        width: 30px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+  .list {
+    border-radius: 4px;
+    //display:flex;
+    //justify-content: space-between;
+    //flex-wrap: wrap;
+    li {
+      float: left;
+      list-style-type: none;
+      padding-bottom: 32px;
+      width: 150px;
+      height: 80%;
+      background-color: aliceblue;
+      cursor: pointer;
+      position: relative;
+      top: 0;
 
-    .teacher_2 {
-        display: flex;
-        flex-direction: row;
-        height: 20px;
-        border: 1px solid silver;
-        width: 20%;
-        background-color: rgb(245, 239, 239);
-        border-radius: 50px;
-        align-items: center;
-        justify-content: space-between;
-        padding-left: 50px;
-        padding-right: 50px;
-        margin-top: 10px;
-        margin-bottom: 30px;
-    }
+      img {
+        display: block;
+        margin-bottom: 15px;
+      }
 
-    .img {
-        width: 30px;
-        height: 30px;
-        border-radius: 20px;
-    }
+      .name {
+        font-size: 16px;
+        font-weight: bold;
+        color: #333333;
+        margin-bottom: 5px;
+        text-align: center;
+      }
 
-    #card {
-        width: 80%;
-        padding: 20px;
-        background-color: rgba(255, 255, 255, .95);
-        border-radius: 4px;
-        display: flex;
-        margin: 100px auto auto;;
-    }
+      .company {
+        font-weight: bold;
+        color: #fd604d;
+        text-align: center;
+        margin-bottom: 2px;
+      }
 
-    #card_1 {
-        width: 90%;
+      .btn {
+        width: 100px;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 300;
+        color: #0a328e;
+        border: 1px solid #0a328e;
         margin: auto;
+      }
+
+      &:hover {
+        .btn {
+          background-color: #0a328e;
+          color: #f0f0f0;
+        }
+
+        top: -5px;
+        transition: top 0.2s linear;
+      }
     }
+  }
+
+  #card {
+    width: 80%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, .95);
+    border-radius: 4px;
+    display: flex;
+    margin: 100px auto auto;;
+  }
+
+  #card_1 {
+    width: 90%;
+    margin: auto;
+  }
 </style>
