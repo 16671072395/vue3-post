@@ -25,8 +25,7 @@ export default {
 .backcolor {
   height: 100%;
   width: 100%;
-  background-color: rgb(84, 92, 100);
-  background: url("../src/assets/backimage.webp") no-repeat;
+  background: rgb(84, 92, 100) url("../src/assets/backimage.webp") no-repeat;
   background-size: 110% 110%;
 }
 </style>
