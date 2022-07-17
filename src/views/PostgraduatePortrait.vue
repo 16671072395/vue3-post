@@ -29,8 +29,23 @@
 </template>
 
 <script>
+import { ref } from "vue";
 export default {
   name: "PostgraduatePortrait",
+  setup() {
+    const activeIndex2 = ref("1");
+    function handleOpen(key, keyPath) {
+      console.log(key, keyPath);
+    }
+    function handleClose(key, keyPath) {
+      console.log(key, keyPath);
+    }
+    return {
+      handleOpen,
+      handleClose,
+      activeIndex2,
+    };
+  },
 };
 </script>
 
