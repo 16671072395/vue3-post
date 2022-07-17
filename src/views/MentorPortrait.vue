@@ -16,7 +16,7 @@
             </div>
             <div style="display:inline;">
                 <span style="margin-left: 20px">导师类别</span>
-                <el-select size="default" style="margin-left: 10px" v-model="MentorCategory" placeholder="请选择">
+                <el-select size="default" style="margin-left: 10px" v-model="MentorCategory" placeholder="全部">
                     <el-option
                             v-for="item in optionsForMentorCategory"
                             :key="item.value"
