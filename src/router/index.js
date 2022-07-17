@@ -12,6 +12,7 @@ import PostHome from "../views/PostgraduateHome/PostHome.vue"
 import QualityMonitor from "../views/QualityMonitor.vue"
 
 import Login from "@/views/Login";
+import Details from "@/views/Details";
 
 
 const routes = [
@@ -82,7 +83,11 @@ const routes = [
     path: '/login',
     name: 'login',
     component: Login
-  }
+  },{
+    path: '/details',
+    name: 'Details',
+    component: Details
+  },
 ]
 
 const router = createRouter({

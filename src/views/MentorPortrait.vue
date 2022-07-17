@@ -38,13 +38,13 @@
     </el-card>
     <div style="background-color: rgba(128,128,128,0.58)">
         <ul class="list BanXing">
-            <li style="border-radius: 4px">
+            <li v-for="item in teachers" :key="item.id" @click="goDetails(item.id)"
+                style="border-radius: 4px;margin-left: 20px;margin-top: 20px;">
                 <div>
-                    <img src="../assets/test.jpeg" width="80%"
-                         style="display: block;margin: 10px auto;border-radius: 4px">
+                    <img class="image" :src="item.src">
                 </div>
-                <div class="name">教师姓名</div>
-                <div class="company">教师单位</div>
+                <div class="name">{{ item.name }}</div>
+                <div class="company">{{ item.company }}</div>
                 <div class="btn">查看更多</div>
             </li>
         </ul>
@@ -56,6 +56,12 @@
 
 <script>
     export default {
+        methods: {
+            //跳转到详情页
+            goDetails(id) {
+                this.$router.push({path:"/details",query:{id}})
+            }
+        },
         data() {
             return {
                 name: '',
@@ -79,6 +85,33 @@
                 ],
                 CompanyName: '',
                 MentorCategory: '',
+                teachers: [
+                    {
+                        id: 1,
+                        name: '张三',
+                        company: '计算机与电子信息学院',
+                        src: require('../assets/test.jpeg')
+                    },
+                    {
+                        id: 2,
+                        name: '李四',
+                        company: '计算机与电子信息学院',
+                        src: require('../assets/test.jpeg')
+                    },
+                    {
+                        id: 3,
+                        name: '王五',
+                        company: '计算机与电子信息学院',
+                        src: require('../assets/test.jpeg')
+                    },
+                    {
+                        id: 4,
+                        name: '赵六',
+                        company: '计算机与电子信息学院',
+                        src: require('../assets/test.jpeg')
+                    },
+
+                ],
             }
         }
     }
@@ -90,11 +123,18 @@
     margin: auto;
   }
 
+  .image {
+    width: 70%;
+    display: block;
+    margin: 10px auto;
+    padding-left: -10px;
+    padding-right: -10px;
+    border-radius: 4px
+  }
+
   .list {
     border-radius: 4px;
-    //display:flex;
-    //justify-content: space-between;
-    //flex-wrap: wrap;
+
     li {
       float: left;
       list-style-type: none;
