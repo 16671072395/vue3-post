@@ -17,11 +17,12 @@
         size="default"
         :cell-class-name="cellStyle"
       >
-        <el-table-column prop="num" label="学号" width="150%" />
-        <el-table-column prop="name" label="姓名" width="100%" />
+        <el-table-column prop="num" label="学号" width="120%" />
+        <el-table-column prop="name" label="姓名" width="80%" />
+        <el-table-column prop="sex" label="性别" width="70%" />
         <el-table-column prop="professional" label="专业名称" width="150%" />
         <el-table-column prop="class" label="类别" width="100%" />
-        <el-table-column prop="Age" label="年龄" width="100%" />
+        <el-table-column prop="Age" label="年龄" width="70%" />
         <el-table-column prop="AdmissionDate" label="入学日期" width="120%" />
         <el-table-column prop="IdNumber" label="证件号码" width="200%" />
         <el-table-column prop="TelNumber" label="电话" width="150%">
@@ -91,10 +92,11 @@ export default {
     createExcel() {
       alert("前端干不了这个活儿");
     },
-    handleEdit(row) {
-      console.log("编辑被点击了");
-      this.form = JSON.parse(JSON.stringify(row));
-      this.dialogVisible = true;
+    handleEdit(tableData_already) {
+      this.$router.push({
+        name: "postportrait",
+        params: { tableData_already: JSON.stringify(tableData_already) },
+      });
     },
   },
   data() {
@@ -120,6 +122,14 @@ export default {
           TelNumber: "15799394443", //电话号都为网络上生成
           Email: "15799394443@163.com",
           Address: "东29栋301室",
+          sex: "男",
+          school: "广西大学",
+          mentor: "张三",
+          length: 3,
+          college: "计电学院",
+          national: "汉族",
+          qqTel: "2579964030",
+          politicalStatus: "群众",
         },
         {
           num: "2213052320",
@@ -132,6 +142,14 @@ export default {
           TelNumber: "15570474442", //电话号都为网络上生成
           Email: "15570474442@163.com",
           Address: "东29栋302室",
+          sex: "男",
+          school: "广西大学",
+          mentor: "李三",
+          length: 3,
+          college: "计电学院",
+          national: "汉族",
+          qqTel: "25715464030",
+          politicalStatus: "预备党员",
         },
         {
           name: "王小明",
@@ -144,6 +162,14 @@ export default {
           TelNumber: "15671484443", //电话号都为网络上生成
           Email: "15671484443@163.com",
           Address: "东29栋303室",
+          sex: "男",
+          school: "广西大学",
+          mentor: "李四",
+          length: 3,
+          college: "计电学院",
+          national: "汉族",
+          qqTel: "2452156403",
+          politicalStatus: "预备党员",
         },
         {
           name: "王小华",
@@ -156,6 +182,14 @@ export default {
           TelNumber: "18480760004", //电话号都为网络上生成
           Email: "18480760004@163.com",
           Address: "东29栋304室",
+          sex: "男",
+          school: "广西大学",
+          mentor: "王五",
+          length: 3,
+          college: "计电学院",
+          national: "壮族",
+          qqTel: "2572376122",
+          politicalStatus: "预备党员",
         },
         {
           name: "赵小华",
@@ -168,6 +202,14 @@ export default {
           TelNumber: "18480764441", //电话号都为网络上生成
           Email: "18480764441@163.com",
           Address: "东29栋305室",
+          sex: "女",
+          school: "广西大学",
+          mentor: "赵六",
+          length: 3,
+          college: "计电学院",
+          national: "壮族",
+          qqTel: "2131285123",
+          politicalStatus: "预备党员",
         },
         {
           name: "周小明",
@@ -180,6 +222,14 @@ export default {
           TelNumber: "15671484445", //电话号都为网络上生成
           Email: "15671484445@163.com",
           Address: "东29栋306室",
+          sex: "男",
+          school: "广西大学",
+          mentor: "王五",
+          length: 3,
+          college: "计电学院",
+          national: "汉族",
+          qqTel: "2572376122",
+          politicalStatus: "预备党员",
         },
         {
           name: "黄小明",
@@ -192,6 +242,14 @@ export default {
           TelNumber: "15971154442", //电话号都为网络上生成
           Email: "15971154442@163.com",
           Address: "东29栋307室",
+          sex: "男",
+          school: "广西大学",
+          mentor: "王五",
+          length: 3,
+          college: "计电学院",
+          national: "汉族",
+          qqTel: "2572376122",
+          politicalStatus: "预备党员",
         },
       ],
     };

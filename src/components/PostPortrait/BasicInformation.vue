@@ -1,6 +1,6 @@
 <template>
   <el-row>
-    <el-col :span="9"
+    <el-col :span="7"
       ><div class="grid-content ep-bg-purple">
         <img src="../../assets/headimage.jpg" />
       </div>
@@ -8,64 +8,72 @@
     <el-col :span="8"
       ><div class="grid-content ep-bg-purple" />
       <el-row :gutter="2" align>
-        <el-col> <span>姓名：张三</span> </el-col>
-        <el-col><span>学校：广西大学</span></el-col>
-        <el-col><span>导师：XX教授</span></el-col>
-        <el-col><span>学制：3年</span></el-col>
+        <el-col>
+          <span>姓名：{{ basicInformation.name }}</span>
+        </el-col>
+        <el-col
+          ><span>学校：{{ basicInformation.school }}</span></el-col
+        >
+        <el-col
+          ><span>导师：{{ basicInformation.mentor }}</span></el-col
+        >
+        <el-col
+          ><span>学制：{{ basicInformation.length }}年</span></el-col
+        >
       </el-row>
       <el-row :gutter="2">
         <el-col>
           <div class="grid-content ep-bg-purple" />
-          <span>性别：男</span>
+          <span>性别：{{ basicInformation.sex }}</span>
         </el-col>
         <el-col>
           <div class="grid-content ep-bg-purple" />
-          <span>学院：计电学院</span>
+          <span>学院：{{ basicInformation.college }}</span>
         </el-col>
         <el-col>
           <div class="grid-content ep-bg-purple" />
-          <span> 研究方向：人工智能</span>
+          <span> 学号：{{ basicInformation.num }}</span>
         </el-col>
         <el-col>
           <div class="grid-content ep-bg-purple" />
-          <span>电话：136****2354 </span>
+          <span>电话：{{ basicInformation.TelNumber }} </span>
         </el-col>
       </el-row>
       <el-row :gutter="2">
         <el-col>
           <div class="grid-content ep-bg-purple" />
-          <span>民族：汉族</span>
+          <span>民族：{{ basicInformation.national }}</span>
         </el-col>
         <el-col>
           <div class="grid-content ep-bg-purple" />
           <!-- <span>地址：东21栋324室</span> -->
-          <span>专业：电子信息</span>
+          <span>专业：{{ basicInformation.professional }}</span>
         </el-col>
         <el-col>
           <div class="grid-content ep-bg-purple" />
-          <span>硕士类型：学术型</span>
+          <span>硕士类型：{{ basicInformation.class }}</span>
         </el-col>
         <el-col>
           <div class="grid-content ep-bg-purple" />
-          <span>邮箱：136****2354@163.com</span>
+          <span>邮箱：{{ basicInformation.Email }}</span>
         </el-col>
       </el-row>
       <el-row :gutter="2">
         <el-col>
           <div class="grid-content ep-bg-purple" />
-          <span>政治面貌：群众</span>
+          <span>政治面貌：{{ basicInformation.politicalStatus }}</span>
         </el-col>
         <el-col>
           <div class="grid-content ep-bg-purple" />
-          <span>班级：XXXX班</span>
+          <span>年龄：{{ basicInformation.Age }}</span>
         </el-col>
         <el-col>
           <div class="grid-content ep-bg-purple" />
-          <span>地址：东21栋324室</span>
+          <span>地址：{{ basicInformation.Address }}</span>
         </el-col>
         <el-col>
           <div class="grid-content ep-bg-purple" />
-          <span> QQ：2315248541</span>
+          <span> QQ：{{ basicInformation.qqTel }}</span>
         </el-col>
       </el-row>
     </el-col>
@@ -75,6 +83,33 @@
 <script>
 export default {
   name: "BasicInformation",
+  mounted() {
+    this.basicInformation = JSON.parse(this.$route.params.tableData_already);
+    console.log(this.basicInformation);
+  },
+  data() {
+    return {
+      // basicInformation: {
+      //   school: "广西大学",
+      //   name: "",
+      //   mentor: "XX教授",
+      //   length: "三年",
+      //   sex: "男",
+      //   college: "计电学院",
+      //   researchDirection: this.param.professional,
+      //   tel: "136****2354",
+      //   national: "汉族",
+      //   major: "电子信息",
+      //   masterType: "学术型",
+      //   email: "136****2354@163.com",
+      //   politicalStatus: "群众",
+      //   age: "XXXX班",
+      //   address: "东21栋324室",
+      //   qqTel: "2315248541",
+      // },
+      basicInformation: {},
+    };
+  },
 };
 </script>
 

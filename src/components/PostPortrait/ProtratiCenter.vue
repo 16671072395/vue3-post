@@ -1,10 +1,6 @@
 <template>
   <div
-    style="
-      margin: 10px 0px 0px 0px;
-      padding: 10px;
-      background-color: aliceblue;
-    "
+    style="margin: 10px 0px 0px 0px; padding: 10px; background-color: aliceblue"
   >
     <!--      功能区域-->
     <div style="margin: 10px 0">
@@ -60,9 +56,9 @@
     <div style="margin: 10px 0">
       <el-pagination
         v-model:currentPage="pageInfo.pageNum"
-        :default-page-size="3"
+        :default-page-size="10"
         :page-size="pageInfo.pageSize"
-        :page-sizes="[3, 5, 10, 20, 50]"
+        :page-sizes="[10, 20, 50]"
         :total="total"
         :small="small"
         :disabled="disabled"
@@ -214,7 +210,7 @@ export default {
       search: "",
       form: {},
       dialogVisible: false,
-      total: 6,
+      total: 8,
       tableData: [
         {
           id: 1,
