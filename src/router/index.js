@@ -52,6 +52,11 @@ const routes = [
       path: '/postportrait',
       name: 'postportrait',
       component: () => import(/* webpackChunkName: "PostPortrait" */ '../views/PostgraduatePortrait/PostPortrait.vue'),
+      props($route) {
+        return {
+          basicInformation: $route.params.tableData_already,
+        }
+      }
     }]
   },
   {
@@ -83,7 +88,7 @@ const routes = [
     path: '/login',
     name: 'login',
     component: Login
-  },{
+  }, {
     path: '/details',
     name: 'Details',
     component: Details
