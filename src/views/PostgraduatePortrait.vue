@@ -16,9 +16,9 @@
           <el-menu-item index="/postname">
             <span>研究生名单</span>
           </el-menu-item>
-          <el-menu-item index="/postportrait">
+          <!-- <el-menu-item index="/postportrait">
             <span>研究生画像</span>
-          </el-menu-item>
+          </el-menu-item> -->
         </el-menu>
       </el-aside>
       <el-main class="allHeight">
