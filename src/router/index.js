@@ -30,7 +30,13 @@ const routes = [
   {
     path: '/qualitymonitor',
     name: 'qualitymonitor',
-    component: QualityMonitor
+    component: QualityMonitor,
+    redirect: "/collegenumber",
+    children: [{
+      path: '/collegenumber',
+      name: 'collegenumber',
+      component: () => import(/* webpackChunkName: "CollegeNumber" */ '../views/QualityMonitorPage/CollegeNumber.vue'),
+    }]
   },
   {
     path: '/postgraduate',
