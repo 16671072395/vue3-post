@@ -190,7 +190,7 @@
                 tableData: [
                     {
                         'id': 1,
-                        'number': '开局重伤倒地，激发队友潜力',
+                        'number': '20220875425',
                         'name':'捍卫者',
                         'email': 'admin@gxu.edu.cn',
                         'score_hs': 591,
@@ -199,7 +199,7 @@
                     },
                     {
                         'id': 2,
-                        'number': '理塘最強伝説と絕兇の猛虎！純真丁一郎です！',
+                        'number': '20220875426',
                         'name':'张三',
                         'email': 'zhang_san@gxu.edu.cn',
                         'score_hs': 525,
@@ -208,7 +208,7 @@
                     },
                     {
                         'id': 3,
-                        'number': '下北沢最強伝説！野獣化の先輩浩二です!',
+                        'number': '20220875427',
                         'name':'李四',
                         'email': 'li_si@gxu.edu.cn',
                         'score_hs': 555,
@@ -217,7 +217,7 @@
                     },
                     {
                         'id': 4,
-                        'number': '吉林最速伝説と卑鄙の猎豹！跑男趙三金です!',
+                        'number': '20220875428',
                         'name':'王五',
                         'email': 'wang_wu@gxu.edu.cn',
                         'score_hs': 592,
@@ -226,7 +226,7 @@
                     },
                     {
                         'id': 5,
-                        'number': '瀋陽最狠伝説と整活の猛虎！貴物虎太郎です!',
+                        'number': '20220875429',
                         'name':'赵六',
                         'email': 'zhao_liu@gxu.edu.cn',
                         'score_hs': 610,
@@ -235,7 +235,7 @@
                     },
                     {
                         'id': 6,
-                        'number': '瀋陽最速伝説と疾走の帝王！廃物刀一郎です!',
+                        'number': '20220875430',
                         'name':'飞舞刀',
                         'email': 'dog@700+.com',
                         'score_hs': 150,

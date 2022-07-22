@@ -86,7 +86,10 @@ const routes = [
   },{
     path: '/details',
     name: 'Details',
-    component: Details
+    component: Details,
+    children: [{
+
+    }]
   },
 ]
 
