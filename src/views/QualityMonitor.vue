@@ -13,11 +13,11 @@
           @close="handleClose"
           :router="true"
         >
+          <el-menu-item index="/teacherquality">
+            <span>学校简介</span>
+          </el-menu-item>
           <el-menu-item index="/collegenumber">
             <span>招生情况</span>
-          </el-menu-item>
-          <el-menu-item index="/teacherquality">
-            <span>师资质量</span>
           </el-menu-item>
         </el-menu>
       </el-aside>
