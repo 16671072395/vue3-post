@@ -25,7 +25,7 @@ export default {
             color: "#999",
           },
         },
-        formatter: "{b}:{c}",
+        formatter: "{b}: 招生{c}人",
       },
       xAxis: {
         type: "category",
