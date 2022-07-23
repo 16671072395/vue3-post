@@ -30,7 +30,7 @@ export default {
       xAxis: {
         type: "category",
         data: [
-          "轻工与食品工程学院",
+          "经济学院",
           "生命科学与技术学院",
           "文学院",
           "数学与信息科学学院",
@@ -59,7 +59,7 @@ export default {
           show: true,
           interval: 0, //坐标轴刻度标签的显示间隔,0为强制显示所有，在类目轴中有效。
           color: "black",
-          fontSize: 12,
+          fontSize: 11,
           align: "center",
         },
 
@@ -91,7 +91,7 @@ export default {
       series: [
         {
           data: [
-            { college: "轻工与食品工程学院", value: 215 },
+            { college: "经济学院", value: 208 },
             { college: "生命科学与技术学院", value: 140 },
             { college: "文学院", value: 98 },
             { college: "数学与信息科学学院", value: 57 },
@@ -128,7 +128,7 @@ export default {
 
 <style scoped>
 .myDiv {
-  width: 100%;
+  width: 95%;
   height: 100%;
 }
 </style>

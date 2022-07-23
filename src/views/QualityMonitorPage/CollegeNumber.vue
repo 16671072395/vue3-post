@@ -19,7 +19,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 header {
   height: 5.25rem;
   /* border: 1px solid rgb(6, 6, 202); */

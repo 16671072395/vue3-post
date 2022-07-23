@@ -36,7 +36,13 @@ const routes = [
       path: '/collegenumber',
       name: 'collegenumber',
       component: () => import(/* webpackChunkName: "CollegeNumber" */ '../views/QualityMonitorPage/CollegeNumber.vue'),
-    }]
+    },
+    {
+      path: '/teacherquality',
+      name: 'teacherquality',
+      component: () => import(/* webpackChunkName: "CollegeNumber" */ '../views/QualityMonitorPage/TeacherQuality.vue'),
+    }
+    ]
   },
   {
     path: '/postgraduate',
@@ -98,9 +104,9 @@ const routes = [
     path: '/details',
     name: 'Details',
     component: Details,
-    children: [{
+    // children: [{
 
-    }]
+    // }]
   },
 ]
 

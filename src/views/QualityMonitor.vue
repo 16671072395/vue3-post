@@ -14,7 +14,10 @@
           :router="true"
         >
           <el-menu-item index="/collegenumber">
-            <span>生源质量</span>
+            <span>招生情况</span>
+          </el-menu-item>
+          <el-menu-item index="/teacherquality">
+            <span>师资质量</span>
           </el-menu-item>
         </el-menu>
       </el-aside>
@@ -46,10 +49,12 @@ export default {
 .aside {
   width: 120px;
 }
+
 div {
   font: size 0.625rem;
 }
 .allHeight {
   padding: 0px 0px 0px 10px;
+  overflow: hidden;
 }
 </style>

@@ -40,7 +40,7 @@ export default {
           "机械工程学院",
           "计算机与电子信息学院",
           "林学院",
-          "经济学院",
+          "轻工与食品工程学院",
           "资源环境与材料学院",
         ],
         //坐标轴指示器配置项
@@ -58,7 +58,7 @@ export default {
           show: true,
           interval: 0, //坐标轴刻度标签的显示间隔,0为强制显示所有，在类目轴中有效。
           color: "black",
-          fontSize: 12,
+          fontSize: 11,
         },
         min: 0,
       },
@@ -98,7 +98,8 @@ export default {
             { college: "机械工程学院", value: 286 },
             { college: "计算机与电子信息学院", value: 244 },
             { college: "林学院", value: 159 },
-            { college: "经济学院", value: 208 },
+            { college: "轻工与食品工程学院", value: 215 },
+
             { college: "资源环境与材料学院", value: 409 },
           ],
           type: "bar",
@@ -124,7 +125,7 @@ export default {
 
 <style scoped>
 .myDiv {
-  width: 100%;
+  width: 95%;
   height: 100%;
 }
 </style>
