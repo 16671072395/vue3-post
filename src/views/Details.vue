@@ -71,23 +71,53 @@
     </el-card>
     <el-card class="card_2">
 <!--        导航栏-->
-        <el-menu
-                :default-active="activeIndex"
-                class="el-menu-demo"
-                mode="horizontal"
-                @select="handleSelect"
-                style="margin: auto"
-                fit
-        >
-            <el-menu-item index="1">个人简介</el-menu-item>
-            <el-menu-item index="2">主讲课程</el-menu-item>
-            <el-menu-item index="3">主持（参与）的主要科研项目</el-menu-item>
-            <el-menu-item index="4">主要研究方向</el-menu-item>
-            <el-menu-item index="5">取得的主要研究成果</el-menu-item>
-            <el-menu-item index="6">荣誉与获奖</el-menu-item>
-            <el-menu-item index="7">招生信息</el-menu-item>
-            <el-menu-item index="8">学术兼职</el-menu-item>
-        </el-menu>
+        <el-tabs v-model="activeName" @tab-click="handleClick" stretch="true">
+            <el-tab-pane label="个人简介" name="first" class="pane">
+                <span class="span">
+                    1.2020-10 至今，广西大学，机械工程学院，预聘副教授 <br>
+                    2.2017-12 至 2020-08，北京大学，工学院，博士后<br>
+                    3.2013-09 至 2017-10，湖南大学，机械与运载工程学院，博士<br>
+                    4.2011-09 至 2013-06，湖南大学，机械与运载工程学院，硕士<br>
+                    5.2007-09 至 2011-06，湖南大学，机械与运载工程学院，学士
+                </span>
+            </el-tab-pane>
+            <el-tab-pane label="主讲课程" name="second" class="pane">
+                <span class="span">
+                    《数据结构》
+                </span>
+            </el-tab-pane>
+            <el-tab-pane label="主持（参与）的主要科研项目" name="third" class="pane">
+                <span class="span">
+                    暂无信息
+                </span>
+            </el-tab-pane>
+            <el-tab-pane label="主要研究方向" name="fourth" class="pane">
+                <span class="span">
+                    暂无信息
+                </span>
+            </el-tab-pane>
+            <el-tab-pane label="取得的主要研究成果" name="fifth" class="pane">
+                <span class="span">
+                    暂无信息
+                </span>
+            </el-tab-pane>
+            <el-tab-pane label="荣誉与获奖" name="sixth" class="pane">
+                <span class="span">
+                    暂无信息
+                </span>
+            </el-tab-pane>
+            <el-tab-pane label="招生信息" name="seventh" class="pane">
+                <span class="span">
+                    欢迎广大有志青年报考！
+                </span>
+            </el-tab-pane>
+            <el-tab-pane label="学术兼职" name="eighth" class="pane">
+                <span class="span">
+                    暂无信息
+                </span>
+            </el-tab-pane>
+
+        </el-tabs>
 <!--        具体内容显示区域-->
     </el-card>
 </template>
@@ -97,13 +127,17 @@
         name: "Details",
         data() {
             return {
+                //默认选中第一个个人简介
+                activeName:'first',
                 url: require('../assets/test.jpeg'),
-                activeIndex: '1'
             }
         },
         methods: {
             handleSelect(key, keyPath) {
                 console.log(key, keyPath);
+            },
+            handleClick(tab, event) {
+                console.log(tab, event);
             }
         },
         created() {
@@ -128,4 +162,14 @@
         margin: auto;
     }
 
+
+    .pane{
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 5px;
+    }
+
+    .span{
+        font-size: 16px;
+    }
 </style>
