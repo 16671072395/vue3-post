@@ -6,16 +6,25 @@
         <el-menu
           active-text-color="#ffd04b"
           class="el-menu-vertical-demo"
-          background-color="#545c64"
+          background-color="#008bc2"
           :default-active="activeIndex2"
           text-color="#fff"
           @open="handleOpen"
           @close="handleClose"
           :router="true"
         >
-          <el-menu-item index="/teacherquality">
-            <span>学校简介</span>
-          </el-menu-item>
+          <el-sub-menu index="/teachername" :font-size="12">
+            <template #title>师资力量</template>
+            <el-menu-item style="padding: 25px" index="/teachernames">
+              教职工名录
+            </el-menu-item>
+            <el-menu-item style="padding: 25px" index="/researchsupervisors">
+              研究生导师
+            </el-menu-item>
+            <el-menu-item style="padding: 25px" index="professornames">
+              副教授.教授
+            </el-menu-item>
+          </el-sub-menu>
           <el-menu-item index="/collegenumber">
             <span>招生情况</span>
           </el-menu-item>
@@ -49,7 +58,9 @@ export default {
 .aside {
   width: 120px;
 }
-
+.el-sub-menu .el-menu-item {
+  min-width: 120px;
+}
 div {
   font: size 0.625rem;
 }
