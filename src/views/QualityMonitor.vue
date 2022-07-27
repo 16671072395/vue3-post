@@ -12,22 +12,53 @@
           @open="handleOpen"
           @close="handleClose"
           :router="true"
+          :unique-opened="true"
         >
-          <el-sub-menu index="/teachername" :font-size="12">
+          <el-sub-menu index="/teachername">
             <template #title>师资力量</template>
-            <el-menu-item style="padding: 25px" index="/teachernames">
+            <el-menu-item
+              style="padding: 22px; font-size: 12px"
+              index="/teachernames"
+            >
               教职工名录
             </el-menu-item>
-            <el-menu-item style="padding: 25px" index="/researchsupervisors">
+            <el-menu-item
+              style="padding: 22px; font-size: 12px"
+              index="/researchsupervisors"
+            >
               研究生导师
             </el-menu-item>
-            <el-menu-item style="padding: 25px" index="professornames">
+            <el-menu-item
+              style="padding: 22px; font-size: 12px"
+              index="professornames"
+            >
               副教授.教授
             </el-menu-item>
           </el-sub-menu>
           <el-menu-item index="/collegenumber">
             <span>招生情况</span>
           </el-menu-item>
+          <el-sub-menu index="/computerscitec" :font-size="8">
+            <template #title>培养过程</template>
+            <el-menu-item
+              style="padding: 22px; font-size: 12px"
+              index="/computerscitec"
+            >
+              计算机科学与技术
+            </el-menu-item>
+            <el-menu-item
+              style="padding: 22px; font-size: 12px"
+              index="/informationsecurity"
+            >
+              信息安全
+            </el-menu-item>
+            <el-menu-item
+              style="padding: 22px; font-size: 12px"
+              index="/electronicinformation"
+            >
+              电子信息工程
+            </el-menu-item>
+          </el-sub-menu>
         </el-menu>
       </el-aside>
       <el-main class="allHeight">
