@@ -51,7 +51,21 @@ const routes = [
       path: '/professornames',
       name: 'professornames',
       component: () => import(/* webpackChunkName: "ProfessorNames" */ '../views/QualityMonitorPage/TeacherQuality/ProfessorNames.vue'),
-    }
+    }, {
+      path: '/computerscitec',
+      name: 'computerscitec',
+      component: () => import(/* webpackChunkName: "computerscitec" */ '../views/QualityMonitorPage/CultivationProcess/ComputerSciTec.vue'),
+    },
+    {
+      path: '/informationsecurity',
+      name: 'informationsecurity',
+      component: () => import(/* webpackChunkName: "informationsecurity" */ '../views/QualityMonitorPage/CultivationProcess/InformationSecurity.vue'),
+    },
+    {
+      path: '/electronicinformation',
+      name: 'electronicinformation',
+      component: () => import(/* webpackChunkName: "electronicinformation" */ '../views/QualityMonitorPage/CultivationProcess/ElectronicInformation.vue'),
+    },
     ]
   },
   {
