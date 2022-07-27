@@ -38,9 +38,19 @@ const routes = [
       component: () => import(/* webpackChunkName: "CollegeNumber" */ '../views/QualityMonitorPage/CollegeNumber.vue'),
     },
     {
-      path: '/teacherquality',
-      name: 'teacherquality',
-      component: () => import(/* webpackChunkName: "CollegeNumber" */ '../views/QualityMonitorPage/TeacherQuality.vue'),
+      path: '/teachernames',
+      name: 'teachernames',
+      component: () => import(/* webpackChunkName: "TeacherNames" */ '../views/QualityMonitorPage/TeacherQuality/TeacherNames.vue'),
+    },
+    {
+      path: '/researchsupervisors',
+      name: 'researchsupervisors',
+      component: () => import(/* webpackChunkName: "ResearchSupervisors" */ '../views/QualityMonitorPage/TeacherQuality/ResearchSupervisors.vue'),
+    },
+    {
+      path: '/professornames',
+      name: 'professornames',
+      component: () => import(/* webpackChunkName: "ProfessorNames" */ '../views/QualityMonitorPage/TeacherQuality/ProfessorNames.vue'),
     }
     ]
   },
