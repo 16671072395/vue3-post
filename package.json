@@ -16,6 +16,7 @@
     "flexible": "^0.1.20",
     "har-validator": "^5.1.5",
     "lib-flexible": "^0.3.2",
+    "markdown-it": "^13.0.1",
     "node-polyfill-webpack-plugin": "^2.0.0",
     "request": "^2.88.2",
     "uuid": "^8.3.2",
