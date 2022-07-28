@@ -9,7 +9,7 @@
               电子信息工程专业介绍</span
             >
           </p>
-           <p class="MsoNormal" style="line-height: 30pt">
+          <p class="MsoNormal" style="line-height: 30pt">
             <span lang="EN-US" style="font-family: 仿宋; font-size: 16pt"
               >&nbsp;</span
             >
@@ -80,11 +80,6 @@
             >
           </p>
           <p class="MsoNormal" style="line-height: 30pt">
-            <span lang="EN-US" style="font-family: 仿宋; font-size: 16pt"
-              >&nbsp;</span
-            >
-          </p>
-          <p class="MsoNormal" style="line-height: 30pt">
             <strong
               ><span style="font-family: 仿宋; font-size: 16pt"
                 >二、 培养目标</span
@@ -94,11 +89,6 @@
           <p class="MsoNormal" style="line-height: 30pt; text-indent: 32pt">
             <span style="font-family: 仿宋; font-size: 16pt"
               >电子信息工程专业旨在培养学生德、智、体、美、劳全面发展，积极主动，富有责任心，善于沟通，有团队协作精神；掌握信息传输和处理的基本理论和知识，掌握信息获取和应用的核心技术；培养具有基础理论扎实，理论实践并重，专业口径宽，适应性强，发展后劲足，综合素质高，掌握电子信息系统研究、设计、制造、应用和开发的高级工程技术型人才。学生具有批判性和创造性思维，能从工程原理出发，勇于挑战工作中的工程和非工程问题，并运用分析性的思维方式，综合信息，做出合理判断，提出创新的解决方案。学生毕业后能在信息处理、信息传输、通信网络、无线通信、计算机通信、信息系统等相关领域从事科学研究、系统设计、应用研发、集成和管理等工作，也可继续攻读信息与通信工程、电子科学与技术、计算机科学与技术等相关学科专业的研究生。</span
-            >
-          </p>
-          <p class="MsoNormal" style="line-height: 30pt">
-            <span lang="EN-US" style="font-family: 仿宋; font-size: 16pt"
-              >&nbsp;</span
             >
           </p>
           <p class="MsoNormal" style="line-height: 30pt">
@@ -181,12 +171,11 @@
             >
           </p>
           <p class="MsoNormal" style="line-height: 30pt">
-            <span lang="EN-US" style="font-family: 仿宋; font-size: 16pt"
-              >&nbsp;</span
+            <strong
+              ><span style="font-family: 仿宋; font-size: 16pt"
+                >四、主要课程</span
+              ></strong
             >
-          </p>
-          <p class="MsoNormal" style="line-height: 30pt">
-            <span style="font-family: 仿宋; font-size: 16pt">四、主要课程</span>
           </p>
           <p class="MsoNormal" style="line-height: 30pt; text-indent: 32pt">
             <span style="font-family: 仿宋; font-size: 16pt"
@@ -196,11 +185,6 @@
           <p class="MsoNormal" style="line-height: 30pt; text-indent: 32pt">
             <span style="font-family: 仿宋; font-size: 16pt"
               >专业课程分为学科类核心课程、专业核心课程、专业限选课程、专业选修课程、专业实践必修课、专业实践选修课。课程体系由电路类、信号类、通信类、磁波类和计算机类等五个模块组成。核心课程包括：电路分析基础、数字电路与逻辑设计、模拟电子线路、通信电子线路、电磁场与电磁波、程序设计基础、微机原理与单片机应用、信号与系统、数字信号处理、现代通信原理、电子测量技术等。另外融入了专业最新前沿发展的课程，包括人工智能、移动通信、物联网、自动控制技术、云计算技术方向、移动技术等方向的课程，具体课程包括：《数字图像处理》、《微波技术与天线》、《物联网电路设计》、《人工智能及其应用》、《机器学习》、《智能信息处理》、《电子信息系统》等课程。</span
-            >
-          </p>
-          <p class="MsoNormal" style="line-height: 30pt">
-            <span lang="EN-US" style="font-family: 仿宋; font-size: 16pt"
-              >&nbsp;</span
             >
           </p>
           <p class="MsoNormal" style="line-height: 30pt">
