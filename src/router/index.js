@@ -65,6 +65,20 @@ const routes = [
       path: '/electronicinformation',
       name: 'electronicinformation',
       component: () => import(/* webpackChunkName: "electronicinformation" */ '../views/QualityMonitorPage/CultivationProcess/ElectronicInformation.vue'),
+    }, {
+      path: '/postacademicachievements',
+      name: 'postacademicachievements',
+      component: () => import(/* webpackChunkName: "postacademicachievements" */ '../views/QualityMonitorPage/AcademicAchievements/PostAcademicAchievements.vue'),
+    },
+    {
+      path: '/tutoracademicachievements',
+      name: 'tutoracademicachievements',
+      component: () => import(/* webpackChunkName: "tutoracademicachievements" */ '../views/QualityMonitorPage/AcademicAchievements/TutorAcademicAchievements.vue'),
+    },
+    {
+      path: '/outputvaluetransformation',
+      name: 'outputvaluetransformation',
+      component: () => import(/* webpackChunkName: "outputvaluetransformation" */ '../views/QualityMonitorPage/AcademicAchievements/OutputValueTransformation.vue'),
     },
     ]
   },

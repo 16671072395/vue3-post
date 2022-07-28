@@ -59,6 +59,27 @@
               电子信息工程
             </el-menu-item>
           </el-sub-menu>
+          <el-sub-menu index="/postacademicachievements" :font-size="8">
+            <template #title>学术成果</template>
+            <el-menu-item
+              style="padding: 22px; font-size: 12px"
+              index="/postacademicachievements"
+            >
+              研究生学术成果
+            </el-menu-item>
+            <el-menu-item
+              style="padding: 22px; font-size: 12px"
+              index="/outputvaluetransformation"
+            >
+              成果产值转化
+            </el-menu-item>
+            <el-menu-item
+              style="padding: 22px; font-size: 12px"
+              index="/tutoracademicachievements"
+            >
+              导师学术成果
+            </el-menu-item>
+          </el-sub-menu>
         </el-menu>
       </el-aside>
       <el-main class="allHeight">
