@@ -57,7 +57,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 header {
   height: 2rem;
   /* width: 21rem; */
