@@ -1,6 +1,6 @@
 <template>
   <div ref="mychart" id="myDiv">
-    <el-icon class="icon" :size="60" color="#2A6BBA"><User /></el-icon>
+    <el-icon class="icon" :size="60" color="#0b26f1"><User /></el-icon>
     <div class="text">
       <span>硕士生导师人均专著数：{{ postTutor }}个</span><br />
       <span>博士生导师人均专著数：{{ doctorTutor }}个</span>
@@ -33,10 +33,12 @@ export default {
 }
 .text {
   float: right;
-  margin-right: 10px;
+  margin-right: 40px;
   margin-top: 35px;
   line-height: 30pt;
-  font-family: 仿宋;
+  font-family: 等线;
   font-size: 14pt;
+  font-weight: 400;
+  color: #fff;
 }
 </style>
