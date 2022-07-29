@@ -7,7 +7,7 @@
           active-text-color="#ffd04b"
           class="el-menu-vertical-demo"
           background-color="#008bc2"
-          :default-active="activeIndex2"
+          default-active="/teachername"
           text-color="#fff"
           @open="handleOpen"
           @close="handleClose"
@@ -103,7 +103,7 @@ export default {
 
 <style scoped>
 .el-menu-vertical-demo {
-  height: 760px;
+  height: 762px;
   width: 120px;
   background-color: #008bc2;
 }
