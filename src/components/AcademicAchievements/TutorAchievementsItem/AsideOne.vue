@@ -121,9 +121,6 @@ export default {
             color: "black",
           },
           //坐标轴在 grid 区域中的分隔线
-          splitLine: {
-            show: false,
-          },
           // 坐标轴轴线相关设置。
           axisLine: {
             show: true,
@@ -132,6 +129,7 @@ export default {
             },
           },
           splitLine: {
+            show: false,
             lineStyle: {
               color: "rgb(78, 78, 199)",
             },
