@@ -1,10 +1,9 @@
 <template>
-  <div>yanjiusheng</div>
   <Layout></Layout>
 </template>
 
 <script>
-import Layout from "../../../components/AcademicAchievements/PostAchievementsItem/Layout.vue";
+import Layout from "../../../components/AcademicAchievements/PostAchievementsItem/Layout";
 export default {
   name: "PostAcademicAchievements",
   components: {
