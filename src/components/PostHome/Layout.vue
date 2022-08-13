@@ -71,7 +71,7 @@ header {
   max-width: 2048px;
   margin: 0px 0px 0px 0px;
   /* 盒子上10px 左右0px 下0的外边距 */
-
+  height: 9.3rem;
   display: flex; /*父容器设置flex布局才能在子元素使用 */
   /* border: 1px solid blue; */
 }

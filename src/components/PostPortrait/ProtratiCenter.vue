@@ -1,6 +1,11 @@
 <template>
   <div
-    style="margin: 10px 0px 0px 0px; padding: 10px; background-color: aliceblue"
+    style="
+      margin: 10px 0px 0px 0px;
+      padding: 10px;
+      background-color: aliceblue;
+      height: 7.3rem;
+    "
   >
     <!--      功能区域-->
     <div style="margin: 10px 0">
@@ -26,7 +31,7 @@
       :header-cell-style="{ 'text-align': 'center' }"
       stripe
       border
-      style="width: 100%"
+      style="width: 100%; height: 6.2rem"
       fit
     >
       <el-table-column prop="id" label="编号" sortable width="50%" />
@@ -291,4 +296,7 @@ export default {
 </script>
 
 <style scoped>
+.el-table-column {
+  height: 60px;
+}
 </style>

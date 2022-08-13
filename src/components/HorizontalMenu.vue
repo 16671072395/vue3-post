@@ -97,7 +97,7 @@ export default {
 <style scoped>
 .avatar {
   position: relative;
-  left: 12.825rem;
+  left: 13rem;
   top: 8px;
 }
 .el-menu-demo {
@@ -105,7 +105,7 @@ export default {
 }
 .msg {
   position: relative;
-  left: 13rem;
+  left: 13.5rem;
   top: 18px;
   color: #fff;
 }

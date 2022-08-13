@@ -103,7 +103,7 @@ export default {
 
 <style scoped>
 .el-menu-vertical-demo {
-  height: 762px;
+  height: 11.25rem;
   width: 120px;
   background-color: #008bc2;
 }

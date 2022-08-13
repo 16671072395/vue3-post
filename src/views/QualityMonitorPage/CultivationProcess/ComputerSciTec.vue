@@ -401,7 +401,7 @@ export default {
 
 <style scoped>
 .myDiv {
-  height: 760px;
+  height: 11.2rem;
   overflow: auto;
   width: 100%;
   color: white;

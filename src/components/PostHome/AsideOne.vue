@@ -1,5 +1,5 @@
 <template>
-  <div class="myDiv" ref="mychart">dsa4d2154</div>
+  <div class="myDiv" ref="mychart"></div>
 </template>
 
 <script>
@@ -162,8 +162,8 @@ export default {
   clip-path: polygon(0 0, 100% 0, 100% 90%, 90% 100%, 0 100%);
   /* div的其他属性 */
   /* background-color: aqua; */
-  height: 4rem;
-  width: 4.8rem;
+  height: 4.5rem;
+  width: 5.1rem;
   border: 1px solid rgb(6, 6, 202);
   margin: 10px 0px 10px 0px;
 }

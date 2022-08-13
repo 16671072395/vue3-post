@@ -219,7 +219,7 @@ export default {
   /* 控制div的缺角样式 */
   /* div的其他属性 */
   /* background-color: aqua; */
-  height: 8.2rem;
+  height: 9.1rem;
   width: 11.5rem;
   /* border: 1px solid rgb(214, 118, 118); */
   margin: 10px 10px 10px 0px;
