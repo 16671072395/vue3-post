@@ -58,7 +58,7 @@ export default {
           show: true,
           interval: 0, //坐标轴刻度标签的显示间隔,0为强制显示所有，在类目轴中有效。
           color: "black",
-          fontSize: 11,
+          fontSize: 14,
         },
         min: 0,
       },

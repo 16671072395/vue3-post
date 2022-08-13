@@ -70,8 +70,8 @@ export default {
   clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%, 0 11%); */
   /* div的其他属性 */
   /* background-color: aqua; */
-  height: 6rem;
-  width: 6rem;
+  height: 7.5rem;
+  width: 6.7rem;
   border: 1px solid rgb(6, 6, 202);
   margin: 10px 0px 10px 20px;
 }

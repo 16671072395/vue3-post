@@ -21,11 +21,11 @@ export default {
 
 <style scoped>
 header {
-  height: 5.25rem;
+  height: 5.5rem;
   /* border: 1px solid rgb(6, 6, 202); */
 }
 .container {
-  height: 5.25rem;
+  height: 5.5rem;
   width: 100%;
 }
 </style>
